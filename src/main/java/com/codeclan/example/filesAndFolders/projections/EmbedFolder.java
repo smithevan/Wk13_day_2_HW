@@ -5,9 +5,9 @@ import com.codeclan.example.filesAndFolders.models.User;
 import org.springframework.data.rest.core.config.Projection;
 
 
-@Projection(name = "embedUser", types = Folder.class)
-public interface EmbedUser {
-    String getName();
+@Projection(name = "embedFolder", types = Folder.class)
+public interface EmbedFolder {
+    String getTitle();
     User getUser();
 }
 
